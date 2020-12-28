@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+             <link rel="icon" href="images/Favicon.png" type="image/png">
+  <title>Сделай сам</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Сделай сам</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Популярное</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Users.html">Пользователи</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">О сайте</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="addarticle.html">Добавить статью</a>
+        </li>
+        <form class="form-inline">
+          <div class="form-group" >
+            <label for=""></label>
+            <input type="text" name="" id="" class="form-control" placeholder="Название статьи" aria-describedby="helpId">
+            <small id="helpId" class="text-muted"></small>
+          </div>
+          <div>
+          <a name="Find" id="1" class="btn" href="#" role="button" style="border-color: black;background-color: white;">Найти</a>
+        </div></form>
+      </ul>
+    </div>
+    <div class="btn-group dropleft">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+        Аккаунт
+      </button>
+      <div class="dropdown-menu" aria-labelledby="triggerId">
+        <a class="dropdown-item" href="registerAndLogin.html">Войти или зарегистрироваться</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Зарегистрироваться</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Ваше имя"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Ваша почта"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Пароль"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Повторите пароль"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>Я соглашаюсь с <a href="#" class="term-service">Правилами сайта</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Зарегистрироваться"/>
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Si in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">Создать аккаунт</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Войти</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Ваше имя или никнейм"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Пароль"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Запомнить меня</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Войти"/>
+                            </div>
+                        </form>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</html>
